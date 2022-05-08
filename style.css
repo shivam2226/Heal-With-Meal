@@ -1,0 +1,202 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#logo img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+   /* border-radius: 50% 40%; */
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 24px;
+}
+#navbar ul li{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-family: 'El Messiri', sans-serif;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+}
+#navbar ul li a:hover{
+    background-color: rgb(228, 226, 226);
+    color: tomato;
+}
+.primary{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Quintessential', cursive;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 150px;
+    align-items: center;
+    justify-content: center;
+    height: 490px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+  /*  background: url('../img/food bg.jpg') no-repeat center center/cover; */
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/food bg.jpg');
+    height: 90%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+#home p{
+    text-align: center;
+    font-size: 1.3rem;
+    color: aqua;
+    font-weight: 800;
+    margin-top: 10px;
+}
+#home h3{
+    padding-top: 7px;
+    color: beige;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 1200;
+}
+.btn{
+    padding: 4px 15px;
+    margin: 10px 10px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: brown;
+    color: white;
+}
+#services{
+    margin: 20px;
+    display: flex;
+}
+#service-box h1{
+    font-size: 2rem;
+    margin-top: 5px;
+}
+#services .box{
+    border: 2px solid black;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 15px;
+    background-color: rgb(224, 250, 250);
+}
+#services .box img{
+    height: 140px;
+    width: 250px;
+    display: block;
+    margin: 5px auto;
+}
+#services .box h2{
+    font-size: 1.25rem;
+}
+.center{
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-weight: 700;
+}
+#best-seller{
+    height: 375px;
+}
+#best-seller h1{
+    font-size: 1.8rem;
+    color: red;
+}
+#best{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#best img{
+    height: 170px;
+    padding: 15px;
+}
+.best-item{
+    padding: 15px;
+}
+.h-center{
+    font-family: lato;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#best-seller::before{
+    content: "";
+    position: absolute;
+    background: url('../img/seller bg.jpg') no-repeat center center/cover;
+    height: 58%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.92;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(212, 208, 209);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.92;
+}
+#contact h1{
+    margin: 5px;
+    padding: 5px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 13px;
+}
+#contact-box form{
+    width: 45%;
+}
+#contact-box input , #contact-box textarea{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+}
+.form-grp{
+    padding: 5px;
+}
